@@ -35,6 +35,7 @@ STEP 6:
 */
 
 import React from 'react'; /* STEP 0 */
+import React, {useState} from 'react';
 
 export default function Input() {
   /* STEP 1 */
