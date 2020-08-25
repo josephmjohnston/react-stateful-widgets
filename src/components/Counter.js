@@ -50,15 +50,23 @@ import React from 'react'; /* STEP 0 */
 
 export default function Counter() {
   /* STEP 1 */
+  const [count, setCount] = useState(0);
 
   const increment = () => {
     /* STEP 4 */
+
+    let countPlus = count + 1;
+    return setCount(countPlus);
   };
   const decrement = () => {
     /* STEP 5 */
+
+    let countMinus = count - 1;
+    return setCount(countMinus);
   };
   const reset = () => {
     /* STEP 6 */
+    return setCount(0)
   };
 
   const style = {
